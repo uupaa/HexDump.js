@@ -68,11 +68,10 @@ function testHexDump_dumpStyle(test, pass, miss) {
             values1: { style: "color:red",  values: [0xEA, 0xE6, 0xAA, 0xB0] },
             values2: { style: "color:blue", values: [0x5E, 0x46, 0x43, 0x2C] },
             range1:  { style: "color:green", begin: 8, end: 10 },
-            range2:  { style: "background-color:yellow", begin: 20 },
-            // 23byte 以降に 0x50, 0x51, 0x52 があったら blue にする
-            valuesWithRange0x50: { bold: true, style: "color:blue", begin: 23, values: [0x50] },
-            valuesWithRange0x51: { bold: true, style: "color:blue", begin: 23, values: [0x51] },
-            valuesWithRange0x52: { bold: true, style: "color:blue", begin: 23, values: [0x52] },
+            range2:  { style: "background-color:yellow", begin: 0x23 },
+            valuesWithRange0x50: { bold: true, style: "color:blue", begin: 0x1a, values: [0x50] },
+            valuesWithRange0x51: { bold: true, style: "color:blue", begin: 0x1a, values: [0x51] },
+            valuesWithRange0x52: { bold: true, style: "color:blue", begin: 0x1a, values: [0x52] },
         }
     });
 
