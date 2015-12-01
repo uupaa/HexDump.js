@@ -1,6 +1,6 @@
 {
   "name": "uupaa.hexdump.js",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Hex dump",
   "url": "https://github.com/uupaa/HexDump.js",
   "keywords": ["uupaa", "WebModule", "Unstable"],
